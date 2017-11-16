@@ -4,6 +4,6 @@ end
 
 def batch_badge_creator(attendees)
   attendees.each do|n|
-    puts badge_maker(n)
+    badge_maker(n)
   end
 end
