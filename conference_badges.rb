@@ -22,7 +22,7 @@ end
 
 def printer(people)
   people.each do |n|
-    batch_badge_creator(n)
-    assign_rooms(people)
+    puts batch_badge_creator(n)
+    puts assign_rooms(people)
   end
 end
