@@ -2,27 +2,27 @@ def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(attendees)
+def batch_badge_creator(people)
   arr = []
-  attendees.each do|n|
+  people.each do|n|
     arr.push(badge_maker(n))
   end
   return arr
 end
 
-def assign_rooms(attendees)
+def assign_rooms(people)
   arr = []
   room = 1
-  attendees.each do |n|
+  people.each do |n|
     arr.push("Hello, #{n}! You'll be assigned to room #{room}!")
     room += 1
   end
   return arr
 end
 
-def printer(attendees)
-  attendees.each do |n|
+def printer(people)
+  people.each do |n|
     batch_badge_creator(n)
-    assign_rooms(attendees)
+    assign_rooms(people)
   end
 end
