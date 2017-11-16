@@ -14,7 +14,7 @@ def assign_rooms(attendees)
   arr = []
   room = 1
   attendees.each do |n|
-    arr.push("Hello, #{n}! You'll be assigned to room #{room}"!)
+    arr.push("Hello, #{n}! You'll be assigned to room #{room}!")
     room += 1
   end
   return arr
