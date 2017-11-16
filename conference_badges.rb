@@ -7,4 +7,5 @@ def batch_badge_creator(attendees)
   attendees.each do|n|
     arr.push(badge_maker(n))
   end
+  return arr
 end
